@@ -163,12 +163,12 @@
 					</div>
 				</div>
 				<!-- RSS -->
-				<a href="<?php $this->options->feedUrl(); ?>">
+				<!-- <a href="<?php $this->options->feedUrl(); ?>">
 					<li class="mdui-list-item mdui-ripple">
 						<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-text">rss_feed</i>
 						<div class="mdui-list-item-content">R&nbsp;S&nbsp;S</div>
 					</li>
-				</a>
+				</a> -->
 				<div class="mdui-divider"></div>
 				<div>
 					<a>
@@ -195,14 +195,14 @@
 					</a>
 				</div>
 				<div class="mdui-divider"></div>
-				<div>
+				<!-- <div>
 					<a>
 						<li class="mdui-list-item mdui-ripple" mdui-dialog="{target:'#About_DreamCat'}">
 							<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-text">info_outline</i>
 							<div class="mdui-list-item-content">DreamCat</div>
 						</li>
 					</a>
-				</div>
+				</div> -->
 				<div class="copyright"></div>
 			</div>
 		</div>
