@@ -35,13 +35,14 @@ include 'menu.php';
                     <table class="typecho-list-table">
                         <colgroup>
                             <col width="20"/>
-                            <col width="6%"/>
-                            <col width="%"/>
+                            <col width="5%"/>
+                            <col width="20%"/>
                             <col width="15%"/>
                             <col width="10%"/>
                             <col width="10%"/>
                             <col width="15%"/>
                             <col width="15%"/>
+                            <col width="10%"/>
                         </colgroup>
                         <thead>
                             <tr>
@@ -51,6 +52,7 @@ include 'menu.php';
                                 <th><?php _e('时间'); ?></th>
                                 <th><?php _e('语言'); ?></th>
                                 <th><?php _e('平台'); ?></th>
+                                <th><?php _e('IP'); ?></th>
                                 <th><?php _e('IP归属'); ?></th>
                                 <th><?php _e('url'); ?></th>
                             </tr>
@@ -82,6 +84,10 @@ include 'menu.php';
 
                                 <td><?php if($users->browser): ?>
                                     <?php $users->browser(); ?><?php else: _e('暂无'); endif; ?>
+                                </td>
+
+                                <td><?php if($users->create_ip): ?>
+                                    <?php $users->create_ip(); ?><?php else: _e('暂无'); endif; ?>
                                 </td>
 
                                 <td><?php if($users->ip_location): ?>
