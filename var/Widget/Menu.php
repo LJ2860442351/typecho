@@ -101,7 +101,7 @@ class Widget_Menu extends Typecho_Widget
      */
     public function execute()
     {
-        $parentNodes = array(NULL, _t('控制台'), _t('撰写'), _t('管理'), _t('设置'));
+        $parentNodes = array(NULL, _t('控制台'), _t('撰写'), _t('管理'), _t('统计'),_t('设置'));
 
         $childNodes =  array(
         array(
@@ -144,6 +144,9 @@ class Widget_Menu extends Typecho_Widget
             array(_t('用户'), _t('管理用户'), 'manage-users.php', 'administrator', false, 'user.php'),
             array(_t('新增用户'), _t('新增用户'), 'user.php', 'administrator', true),
             array(array('Widget_Users_Edit', 'getMenuTitle'), array('Widget_Users_Edit', 'getMenuTitle'), 'user.php?uid=', 'administrator', true),
+        ),
+        array(
+            array(_t('访问统计'), _t('访问统计'), 'statistics.php', 'subscriber')
         ),
         array(
             array(_t('基本'), _t('基本设置'), 'options-general.php', 'administrator'),
